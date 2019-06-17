@@ -15,7 +15,7 @@ export default function MinubarScreen() {
 }
 
 MinubarScreen.navigationOptions = {
-  title: 'Menu',
+  title: 'Menubar',
 };
 
 const styles = StyleSheet.create({
