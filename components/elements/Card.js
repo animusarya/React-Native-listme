@@ -9,7 +9,7 @@ const CardImageBackground = styled(ImageBackground)`
   width: 300;
   height: 350;
   align-self: center;
-  margin-top: 10;
+  margin-top: 20;
   border-radius: 40;
 `;
 
