@@ -3,8 +3,9 @@ import { ScrollView, ImageBackground } from "react-native";
 import styled from "styled-components";
 
 import backgroundImg from "../assets/images/secondgril.jpg";
+import Currency from "../components/elements/Currency";
 
-import { SimpleLineIcons } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
 
 const CardImageBackground = styled(ImageBackground)`
   height: 350;
@@ -12,7 +13,7 @@ const CardImageBackground = styled(ImageBackground)`
   border-radius: 40;
 `;
 
-const Icon = styled(SimpleLineIcons)`
+const Icon = styled(Entypo)`
   color: white;
   text-align: right;
   margin-top: 20;
@@ -37,9 +38,9 @@ export default function LinksScreen() {
   return (
     <ScrollView>
       <CardImageBackground source={backgroundImg}>
-        <Icon name="options-vertical" size={32} />
+        <Icon name="circle-with-cross" size={32} />
         <Title>London trip</Title>
-        <SubTitle>130£ to 150£</SubTitle>
+        <Currency Currency={144} amount={123} style="color:blue;" />
       </CardImageBackground>
     </ScrollView>
   );
