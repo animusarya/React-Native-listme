@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView, ImageBackground } from "react-native";
+import { ScrollView, ImageBackground, View, Text } from "react-native";
 import styled from "styled-components";
 
 import backgroundImg from "../assets/images/secondgril.jpg";
@@ -33,6 +33,30 @@ const SubTitle = styled.Text`
   font-weight: 600;
 `;
 
+const MainContainer = styled.View`
+  flex: 1;
+  width: 200;
+  height: 200;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+`;
+
+const LeftContainer = styled.View`
+  flex: 1;
+  width: 200;
+  height: 50;
+  background-color: powderblue;
+`;
+
+const RightContainer = styled.View`
+  flex: 1;
+  width: 200;
+  height: 50;
+  background-color: red;
+`;
+
 export default function LinksScreen() {
   return (
     <ScrollView>
@@ -41,6 +65,14 @@ export default function LinksScreen() {
         <Title>London trip</Title>
         <SubTitle>130£ to 150£</SubTitle>
       </CardImageBackground>
+      <MainContainer>
+        <LeftContainer>
+          <Text>RULES</Text>
+        </LeftContainer>
+        <RightContainer>
+          <Text>ACTIVITY</Text>
+        </RightContainer>
+      </MainContainer>
     </ScrollView>
   );
 }
