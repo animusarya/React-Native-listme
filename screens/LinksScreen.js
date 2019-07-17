@@ -86,7 +86,16 @@ export default class LinksScreen extends React.Component {
             <SmallButton title="ACTIVITY" />
           </RightContainer>
         </MainContainer>
-        <RulesCard />
+        <RulesCard
+          title="loremon name"
+          subtitle="hellow world iam nasim akther"
+          IconName="options-vertical"
+        />
+        <RulesCard
+          title="loremon name"
+          subtitle="hellow world iam nasim akther"
+          IconName="options-vertical"
+        />
       </ScrollView>
     );
   }
