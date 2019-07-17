@@ -6,6 +6,7 @@ import backgroundImg from "../assets/images/secondgril.jpg";
 import TextButton from "../components/elements/TextButton";
 
 import { Entypo } from "@expo/vector-icons";
+import RulesCard from "../components/elements/RulesCard";
 
 const CardImageBackground = styled(ImageBackground)`
   height: 350;
@@ -37,7 +38,7 @@ const SubTitle = styled.Text`
 const MainContainer = styled.View`
   flex: 1;
   width: auto;
-  height: 200;
+  height: 100;
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
@@ -65,29 +66,30 @@ const SmallButton = styled(TextButton)`
   background-color: transparent;
   font-weight: 600;
   color: #000;
-  &:hover {
-    border-bottom: 1px solid blue;
-  }
+  border-color: blue;
 `;
 
-export default function LinksScreen() {
-  return (
-    <ScrollView>
-      <CardImageBackground source={backgroundImg}>
-        <Icon name="circle-with-cross" size={32} />
-        <Title>London trip</Title>
-        <SubTitle>130£ to 150£</SubTitle>
-      </CardImageBackground>
-      <MainContainer>
-        <LeftContainer>
-          <SmallButton>RULES</SmallButton>
-        </LeftContainer>
-        <RightContainer>
-          <SmallButton>ACTIVITY</SmallButton>
-        </RightContainer>
-      </MainContainer>
-    </ScrollView>
-  );
+export default class LinksScreen extends React.Component {
+  render() {
+    return (
+      <ScrollView>
+        <CardImageBackground source={backgroundImg}>
+          <Icon name="circle-with-cross" size={32} />
+          <Title>London trip</Title>
+          <SubTitle>130£ to 150£</SubTitle>
+        </CardImageBackground>
+        <MainContainer>
+          <LeftContainer>
+            <SmallButton title="Rules" />
+          </LeftContainer>
+          <RightContainer>
+            <SmallButton title="ACTIVITY" />
+          </RightContainer>
+        </MainContainer>
+        <RulesCard />
+      </ScrollView>
+    );
+  }
 }
 
 LinksScreen.navigationOptions = {
