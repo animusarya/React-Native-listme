@@ -1,8 +1,9 @@
 import React from "react";
-import { ScrollView, ImageBackground, View, Text } from "react-native";
+import { ScrollView, ImageBackground, View, Text, Button } from "react-native";
 import styled from "styled-components";
 
 import backgroundImg from "../assets/images/secondgril.jpg";
+import TextButton from "../components/elements/TextButton";
 
 import { Entypo } from "@expo/vector-icons";
 
@@ -35,7 +36,7 @@ const SubTitle = styled.Text`
 
 const MainContainer = styled.View`
   flex: 1;
-  width: 200;
+  width: auto;
   height: 200;
   align-items: flex-start;
   flex-direction: row;
@@ -47,14 +48,26 @@ const LeftContainer = styled.View`
   flex: 1;
   width: 200;
   height: 50;
-  background-color: powderblue;
+  padding-vertical: 10;
+  padding-horizontal: 40;
 `;
 
 const RightContainer = styled.View`
   flex: 1;
   width: 200;
   height: 50;
-  background-color: red;
+  padding-vertical: 10;
+  padding-horizontal: 40;
+`;
+
+const SmallButton = styled(TextButton)`
+  font-size: 19;
+  background-color: transparent;
+  font-weight: 600;
+  color: #000;
+  &:hover {
+    border-bottom: 1px solid blue;
+  }
 `;
 
 export default function LinksScreen() {
@@ -67,10 +80,10 @@ export default function LinksScreen() {
       </CardImageBackground>
       <MainContainer>
         <LeftContainer>
-          <Text>RULES</Text>
+          <SmallButton>RULES</SmallButton>
         </LeftContainer>
         <RightContainer>
-          <Text>ACTIVITY</Text>
+          <SmallButton>ACTIVITY</SmallButton>
         </RightContainer>
       </MainContainer>
     </ScrollView>

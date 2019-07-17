@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import { StyleSheet, TouchableOpacity, Text } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text } from "react-native";
 
 const styles = StyleSheet.create({
   text: {
-    color: '#fff',
-    fontSize: 12,
-  },
+    color: "#fff",
+    fontSize: 12
+  }
 });
 
 const TextButton = ({ style, onPress, children }) => (
@@ -17,13 +17,13 @@ const TextButton = ({ style, onPress, children }) => (
 );
 
 TextButton.defaultProps = {
-  style: {},
+  style: {}
 };
 
 TextButton.propTypes = {
   style: PropTypes.object,
   onPress: PropTypes.func,
-  children: PropTypes.element,
+  children: PropTypes.element
 };
 
 export default TextButton;
