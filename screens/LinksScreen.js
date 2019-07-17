@@ -38,7 +38,7 @@ const SubTitle = styled.Text`
 const MainContainer = styled.View`
   flex: 1;
   width: auto;
-  height: 100;
+  height: 50;
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
