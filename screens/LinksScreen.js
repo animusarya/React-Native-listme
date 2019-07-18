@@ -87,12 +87,12 @@ export default class LinksScreen extends React.Component {
           </RightContainer>
         </MainContainer>
         <RulesCard
-          title="loremon name"
+          title="Round Up Rule"
           subtitle="hellow world iam nasim akther"
           IconName="options-vertical"
         />
         <RulesCard
-          title="loremon name"
+          title="Round Up Rule"
           subtitle="hellow world iam nasim akther"
           IconName="options-vertical"
         />

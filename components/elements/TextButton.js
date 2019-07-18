@@ -17,11 +17,11 @@ const TextButton = ({ style, onPress, title }) => (
 );
 
 TextButton.defaultProps = {
-  style: {}
+  styles: {}
 };
 
 TextButton.propTypes = {
-  style: PropTypes.object,
+  styles: PropTypes.object,
   onPress: PropTypes.func,
   children: PropTypes.element
 };

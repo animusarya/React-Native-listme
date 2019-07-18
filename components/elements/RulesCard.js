@@ -4,6 +4,8 @@ import { View, Text } from "react-native";
 
 import { SimpleLineIcons } from "@expo/vector-icons";
 
+import App from "./SwitchButton";
+
 const MainContainer = styled.View`
   flex: 1;
   width: auto;
@@ -73,7 +75,7 @@ const RulesCard = ({ title, subtitle, IconName }) => (
       <SubTitle>{subtitle}</SubTitle>
     </SecondColumn>
     <ThirdColumn>
-      <Text>fnhjshf</Text>
+      <App />
     </ThirdColumn>
   </MainContainer>
 );
