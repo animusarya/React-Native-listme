@@ -7,6 +7,7 @@ import TextButton from "../components/elements/TextButton";
 
 import { Entypo } from "@expo/vector-icons";
 import RulesCard from "../components/elements/RulesCard";
+import ActivityCard from "../components/elements/ActivityCard";
 
 const CardImageBackground = styled(ImageBackground)`
   height: 350;
@@ -95,6 +96,12 @@ export default class LinksScreen extends React.Component {
           title="Round Up Rule"
           subtitle="hellow world iam nasim akther"
           IconName="options-vertical"
+        />
+        <ActivityCard
+          descriptions="You saved with Activity Round Up Rule"
+          time={1}
+          iconName="options-vertical"
+          amount={123}
         />
       </ScrollView>
     );
